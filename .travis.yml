@@ -11,13 +11,14 @@ cache:
 install:
 - ./gradlew assemble
 script:
-- ./gradlew check
+- ./gradlew build
 deploy:
   provider: s3
   access_key_id: AKIAJNNQE7SIZYKUMMVQ
   secret_access_key:
     secure: x8GqO87IQ4mq8KaaqQTM3LPjVlgJAMkYm7bQ/PY1w1alhYWZ3CcdhPKEKFgiQQtkqv7xpy7H6PsSPvskb4vL8b0ouRJDMvNCSCCLtdRxdPuEwlhEloAn7WXwLMOMCbJ721e1fxvBVe8irrO2l8Wg8stvUJ7h2ETVfGZow0ZxubKGggYmQCgNmQ7X2/rnTpysG5fG5PTpgNMIto8m52Uscwz3HeuULhJy6qRA+5QMHr7vx0zZyI+wpfWhN+8E8tROkThclyg3fEoRvwf5liUo1iSZVLnQTgHup4C57ebN9o+A0n4VT8aD5jR2EvuShNsbPn1CMGBMW1uEyJNLutgwp/zm/4C5d26iFOfCdVx7lCPW6Q/HkCjNUbV0Bg1DY5b6Z/F3klvkgf7Ob9M8pcn7Td2D/1xH5q+G/fq0KCq49bgU79oWnNVpEptvro1nkbX1RQPXZy5WM2sq87R8lZ4RQhAPPkjAFFLMHCVK1lvxKXstI+uBgOP7dpD3pZb4bKXYueAz8idSqcatKH9USvf4O+kZRIyCCm6gtrTwduG0faTdnAmnI5HwfhY6XtQGu4cgCJL0pI/xO9uussW/5+Hvgk9feENpzc8VQH0j6Ez0RF03ghcSoD+sKEMbulNMMlkobMwa1O0tCL8plsHOiOCaGmYYjBJEvg3M6LnGdImVTvg=
   bucket: hwangdezang
+  local_dir: build
   upload-dir: travis
   on:
     repo: dezang/gs-travis-java
