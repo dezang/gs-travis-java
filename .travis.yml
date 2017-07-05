@@ -12,6 +12,7 @@ install:
 - ./gradlew assemble
 script:
 - ./gradlew build
+- ls -al
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
