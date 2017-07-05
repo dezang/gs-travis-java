@@ -35,6 +35,7 @@ deploy:
     bucket: hwangdezang
     key: travis/latest.zip
     application: TravisJavaSample
-    deployment_group: DezangSampleDg
+    deployment_group: DezangSampleDG
+    region: ap-northeast-2
     on:
       branch: master
