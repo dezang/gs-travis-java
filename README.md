@@ -1,6 +1,8 @@
 # Getting Started Travis For Java!
 [![Build Status](https://travis-ci.org/dezang/gs-travis-java.svg?branch=master)](https://travis-ci.org/dezang/gs-travis-java)
 
+이 글을 읽기 전에... 작성이 잘 되어있는 [트라비스 공식 가이드 문서](https://docs.travis-ci.com/)를 읽어보자. 좀 많긴하다. ~~ 그래서 나도 다 못 읽음~~
+
 * 트라비스 자바 샘플 프로젝트...
 * 열심히 업데이트 할께요.
 * 배포까지를 목표로 합니다.

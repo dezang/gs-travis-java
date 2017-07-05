@@ -9,7 +9,7 @@ cache:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
 install:
-- apt-get install -y tree
+- sudo apt-get install tree -y
 - ./gradlew assemble
 script:
 - ./gradlew build
