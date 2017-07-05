@@ -10,4 +10,10 @@ public class HomeRestController {
     public ResponseEntity<?> home() {
         return ResponseEntity.ok("Sure!! Why Not?");
     }
+
+    @GetMapping("/keum")
+    public ResponseEntity<?> keum() {
+        return ResponseEntity.ok("Sure!! keum!");
+    }
+
 }
