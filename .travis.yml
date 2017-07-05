@@ -12,12 +12,19 @@ install:
 - ./gradlew assemble
 script:
 - ./gradlew build
-- ls -al
+before_deploy:
+- "echo 'ready?'"
+- zip -r latest *
+- mkdir -p cd_upload
+- mv latest.zip cd_upload/latest.zip
+- tree
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: hwangdezang
+  skip_cleanup: true
+  local_dir: cd_upload
   upload-dir: travis
   on:
-    repo: dezang/gs-travis-java
+    branch: master
