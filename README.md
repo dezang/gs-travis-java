@@ -21,5 +21,8 @@
 
 여기서 내가 했던 한가지 삽집은 암호화된 키를 환경변수에 등록해서 사용하려 했던 것인데 ~~오직 내 레포에서만 동작하는지 몰랐다..~~ 제대로 동작하지 않았다.
 
+## 배포
+bf2555e3f4d4424bd7651a94c942fcd0903c2ec8 커밋에서 성공! 계속해서 트라비스와 코드디플로이 스크립트를 개선해야합니닷.
+
 # 참고자료
 - [스프링부트 그래들 플러그인](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-gradle-plugin.html)
